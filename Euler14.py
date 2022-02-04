@@ -30,7 +30,7 @@ numbers=list(numStepDictionary.keys())
 
 print(f"number {numbers[steps.index(max(steps))]} with {max(steps)} steps")
 
-def printTotalChain(num):
+def printFullChain(num):
     chain=[]
     num=calcNext(num)
     while(num!=1):
