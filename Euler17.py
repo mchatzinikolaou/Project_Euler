@@ -47,5 +47,5 @@ def toString(num):
 superstring=""
 for  i in range(1,1001):
     superstring+=toString(i)
-superstring=superstring.replace(" ","")
+superstring=superstring.replace(" ","").replace("-","")
 print(len(superstring))
