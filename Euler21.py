@@ -14,12 +14,12 @@ for num in range(2,10000+1):
 
 amicableNumbers=[]
 for i in divisorList.keys():
-    if i not in amicableNumbers:
-        if divisorList[i] in divisorList.keys():
-                                                  #no such thing as
-                                                  #a self-amicable
-                                                  #number
+    if i not in amicableNumbers and divisorList[i] in divisorList.keys():
+
             if divisorList[divisorList[i]]==i and i!=divisorList[i]:
+                                                # no such thing as
+                                                # a self-amicable
+                                                # number
                 amicableNumbers.append(i)
                 amicableNumbers.append(divisorList[i])
 
