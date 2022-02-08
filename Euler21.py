@@ -1,6 +1,6 @@
 import math
 divisorList= {}
-for num in range(2,10000+1):
+for num in range(1,int(1e04)):
     divisors=[]
     for i in range(2,int(math.sqrt(num))+1):
         if num%i==0:
@@ -23,4 +23,5 @@ for i in divisorList.keys():
                 amicableNumbers.append(i)
                 amicableNumbers.append(divisorList[i])
 
-print(sum(amicableNumbers))
+
+print(f"sum: {sum(amicableNumbers)}")
