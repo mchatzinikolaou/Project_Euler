@@ -23,5 +23,4 @@ for i in divisorList.keys():
                 amicableNumbers.append(i)
                 amicableNumbers.append(divisorList[i])
 
-
 print(f"sum: {sum(amicableNumbers)}")
